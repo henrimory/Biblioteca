@@ -1,0 +1,37 @@
+{
+  "livros": [
+    {
+      "gender": "male",
+      "name": {
+        "title": "Mr",
+        "first": "Senhor dos Anéis",
+        "last": ""
+      },
+      "edição": {       
+        "numero": 3,
+        "editora": "Nova",
+        "preço": "R$ 100,00",
+        "categoria": "Fantasia"
+       
+      },
+      "autor": "Steven Spilberg",
+      "login": {
+        "uuid": "81fff763-a903-4959-9e19-93dd22fde565"        
+      },      
+     
+      "phone": "(11) 9883-4324",
+      "cell": "(23) 9082-9628",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      
+      "nat": "BR"
+    }
+  ],
+  "info": {
+    "seed": "9ca37bb6f1746b9b",
+    "results": 1
+   
+  }
+}

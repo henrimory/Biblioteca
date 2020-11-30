@@ -1,21 +1,46 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+import { NavigationContainer } from '@react-navigation/native';
+import React from 'react';
+import BookPage from './src/Pages/BookPage';
+import { createStackNavigator } from '@react-navigation/stack';
+import BookDetails from './src/Pages/BookDetails';
+
+
+function App(){
+
+  const Stack = createStackNavigator();
+
+  return(
+    <NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen name="Lista de Livros" component={BookPage} options = {style}/> 
+      <Stack.Screen name="BookDetails" component={BookDetails} options = {({route})=>{
+        const titlePage = route.params.person.name.first;
+
+        return({
+            title: titlePage,
+            headerStyle: style.headerStyle,
+            headerTitleStyle: style.headerTitleStyle
+        });
+
+
+      }}/>      
+    </Stack.Navigator>
+
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const style = {
+  headerStyle:{
+    backgroundColor: '#5ced83',
+    
   },
-});
+  headerTitleStyle:{
+    color: '#fff',
+    fontSize: 30,
+    textAlign: 'center'
+  }
+}
+
+export default App;
