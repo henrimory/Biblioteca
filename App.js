@@ -15,7 +15,7 @@ function App(){
       <Stack.Navigator>
       <Stack.Screen name="Lista de Livros" component={BookPage} options = {style}/> 
       <Stack.Screen name="BookDetails" component={BookDetails} options = {({route})=>{
-        const titlePage = route.params.person.name.first;
+        const titlePage = route.params.person.Título;
 
         return({
             title: titlePage,

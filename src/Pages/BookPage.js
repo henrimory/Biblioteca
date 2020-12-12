@@ -13,7 +13,7 @@ export default function BookPage(props) {
 
     useEffect(() => {
       axios          
-          .get('http://192.168.0.106:3333/livros')
+          .get('http://192.168.0.106:3333/book')
           .then(resposta => {
             setBook(resposta.data)
             console.log(resposta)

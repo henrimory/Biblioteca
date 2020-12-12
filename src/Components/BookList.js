@@ -4,14 +4,13 @@ import {View, Text, Image, StyleSheet, TouchableHighlight} from 'react-native';
 function BookList({book, navigation}){
     if(book.length !== 0){
         const textElements = book.map((person) => {
-            const {login, picture, name} = person;
+            const {Autor, Título} = person;
           return (
             <TouchableHighlight onPress={()=> {
               navigation.navigate("BookDetails", {person});
-            }} key={login.uuid}>
-              <View style={styles.container}>
-                  {/* <Image source={{uri: picture.thumbnail}} style={styles.photo}/> */}
-                  <Text style={styles.text}>{`${name.first} ${name.last}`}</Text>
+            }} key={Autor}>
+              <View style={styles.container}>                  
+                  <Text style={styles.text}>{`${Autor} ${Título}`}</Text>
               </View>
             </TouchableHighlight>
           )

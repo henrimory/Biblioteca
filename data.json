@@ -1,37 +1,46 @@
+
 {
-  "livros": [
-    {
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Senhor dos Anéis",
-        "last": ""
+  "book":
+  [
+      {
+          "id": 1,
+          "Autor": "Daniel Osmose",
+          "Título": "Vida além mar",
+          "Publicadora": "Vida LTDA",
+          "Preco": "35,00",
+          "Gênero": "Saúde, Informativo"
       },
-      "edição": {       
-        "numero": 3,
-        "editora": "Nova",
-        "preço": "R$ 100,00",
-        "categoria": "Fantasia"
-       
+      {
+          "id": 2,
+          "Autor": "Fugislindo Dente",
+          "Título": "Beleza para que te quero",
+          "Publicadora": "Grupo REDE",
+          "Preco": "23,70",
+          "Gênero": "Bem estar"
       },
-      "autor": "Steven Spilberg",
-      "login": {
-        "uuid": "81fff763-a903-4959-9e19-93dd22fde565"        
-      },      
-     
-      "phone": "(11) 9883-4324",
-      "cell": "(23) 9082-9628",
-      "id": {
-        "name": "",
-        "value": null
+      {
+          "id": 3,
+          "Autor": "Fragâncio de Melo",
+          "Título": "O cheiro da rosa",
+          "Publicadora": "Editora Cravo",
+          "Preco": "35,00",
+          "Gênero": "Românce"
       },
-      
-      "nat": "BR"
-    }
-  ],
-  "info": {
-    "seed": "9ca37bb6f1746b9b",
-    "results": 1
-   
-  }
+      {
+          "id": 4,
+          "Autor": "Mario Vulto",
+          "Título": "O mundo atrás do armário",
+          "Publicadora": "IKEA",
+          "Preco": "24,00",
+          "Gênero": "Fantasia"
+      },
+      {
+          "id": 5,
+          "Autor": "Vando Cândido",
+          "Título": "Bactérias, um inimigo invisível",
+          "Publicadora": "Saúde LTDA",
+          "Preco": "26,00",
+          "Gênero": "Saúde, Terror"
+      }
+  ]
 }

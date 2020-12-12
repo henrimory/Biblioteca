@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, Image, StyleSheet} from 'react-native';
+import {Text, View, StyleSheet} from 'react-native';
 import DataLine from '../Components/DataLine';
 
 function BookDetails({route}){
@@ -8,14 +8,12 @@ function BookDetails({route}){
   return(
 
     <View style={styles.container}>    
-      {/* <Image source={{uri: person.picture.large}} style={styles.photo}/>   */}
-      <DataLine label="Autor: " data={person.autor}/>            
-      <DataLine label="Editora: " data={person.edição.editora}/>
-      <DataLine label="Preço: " data={person.edição.preço}/>
-      <DataLine label="Categoria: " data={person.edição.categoria}/>
-      {/* <DataLine label="Tel: " data={person.phone}/>
-      <DataLine label="Cel: " data={person.cell}/>
-      <DataLine label="Nacionalidade: " data={person.nat}/> */}
+     
+      <DataLine label="Autor: " data={person.Autor}/>            
+      <DataLine label="Editora: " data={person.Publicadora}/>
+      <DataLine label="Preço: " data={person.Preco}/>
+      <DataLine label="Categoria: " data={person.Gênero}/>
+
     </View> 
   ); 
 
